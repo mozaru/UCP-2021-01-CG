@@ -1,0 +1,9 @@
+https://www.inf.pucrs.br/~manssour/OpenGL/Tutorial.html
+https://agostinhobritojr.github.io/tutorial/opengl/
+http://www.ic.uff.br/~anselmo/cursos/CGI/slidesGrad/
+http://www.ic.uff.br/~anselmo/cursos/CGI/slidesGrad/CG_aula4(introducaoaOpenGL).pdf
+
+https://pt.wikibooks.org/wiki/Programa%C3%A7%C3%A3o_com_OpenGL
+http://orion.lcg.ufrj.br/WebGL/
+http://orion.lcg.ufrj.br/WebGL/slides/
+https://developer.mozilla.org/pt-BR/docs/Web/API/WebGL_API/Tutorial/Getting_started_with_WebGL
