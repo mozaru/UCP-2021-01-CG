@@ -23,6 +23,40 @@ void desenharCirculo(double x0, double y0, double raio, bool borda=true, int qtd
    glEnd();
 }
 
+double GrauToRad(double ang)
+{
+    return ang/360.0f*2*M_PI;
+}
+
+void desenharArco(double x0, double y0, double raio, double ang0, double ang1, int qtdPontos=100)
+{
+   double ang,delta,x,y;
+   ang0 = GrauToRad(ang0);
+   ang1 = GrauToRad(ang1);
+   //glBegin(GL_LINE_STRIP);
+    delta = 2*M_PI/qtdPontos;
+    if (ang0<ang1)
+        for(ang=ang0; ang<=ang1; ang=ang+delta)
+        {
+            x = x0+raio*cos(ang);
+            y = y0+raio*sin(ang);
+            glVertex2d(x,y);
+        }
+    else
+        for(ang=ang0; ang>=ang1; ang=ang-delta)
+        {
+            x = x0+raio*cos(ang);
+            y = y0+raio*sin(ang);
+            glVertex2d(x,y);
+        }
+    x = x0+raio*cos(ang1);
+    y = y0+raio*sin(ang1);
+    glVertex2d(x,y);
+
+    //glEnd();
+}
+
+
 void HelloOpenGL::initializeGL()
 {
     //QOpenGLFunctions *glFuncs = QOpenGLContext::currentContext()->functions();
@@ -100,6 +134,7 @@ void HelloOpenGL::paintGL()
     glPopMatrix();
 
 
+
     desenharCirculo(0,0,0.3);
 
     desenharCirculo(0,0.7,0.3, true, 300);
@@ -108,6 +143,15 @@ void HelloOpenGL::paintGL()
 
     desenharCirculo(0.7,0,0.3, false);
 
+    glLineWidth(2);
+    glColor3b(127, 127, 127);
+    glPointSize(1);
+        for(double r=0.4; r>=0.35; r=r-0.01)
+        {
+            glBegin(GL_LINE_STRIP);
+            desenharArco(0.8, -0.3, r, 45, 155, 300);
+            glEnd();
+        }
     glPopMatrix();
 
     c =c + delta;
