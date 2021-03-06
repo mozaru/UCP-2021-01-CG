@@ -1,0 +1,20 @@
+1. fazer um programa em QT para apresentar um triangulo na tela 
+a tela deve ter o fundo preto e o triangulo deve ser preenchido com azul
+
+
+2. fazer um programa em QT para apresentar as linhas de um hexagono
+a tela deve ter o fundo preto e o hexagono nao deve ser preenchido
+mas as linhas devem ser laranja.
+
+3. fazer um programa em QT para apresentar dois quadrados
+   tela com fundo preto
+  quadrado 1 - deve estar a esquerda, ter a somente o contorno, em verde
+           com 4 pixels de grossura do contorno.
+
+  quadrado 2 - deve estar a direita, ser preenchido com verde e ter contorno
+           com 4 pixels de grossura e de cor verde bem escuro.
+           este quadrado deve ter uma rotação de 90 graus (vai ficar como um losango)
+
+4. Fazer o desenho da bandeira do brasil.
+  obs: nao precisa escrever "ordem e progresso", mas deve ter a faixa branca
+       para as estrelas use circulos pequenos.
