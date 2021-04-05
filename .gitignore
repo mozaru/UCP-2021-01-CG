@@ -30,7 +30,7 @@
 *.exe
 *.out
 *.app
-
+*.pdf
 
 *_MinGW_64*
 *.user
